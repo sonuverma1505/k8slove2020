@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+ name: adhocdepnaruto5
+ labels:
+  app: web1
+spec:
+ replicas: 5
+ template:
+  metadata:
+   name: adhocdepnaruto5
+   labels:
+    x: narutoq5
+  spec:
+   containers:
+    - name: sonupodrc
+      image: sonuverma1505/may2020q1:v1
+      ports:
+       - containerPort: 80
+

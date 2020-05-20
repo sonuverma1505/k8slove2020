@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: web1
+  name: adhocdepnaruto5
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    x: narutoq5
+  type: LoadBalancer
+status:
+  loadBalancer: {}

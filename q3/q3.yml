@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: adhocpod2
+ labels:
+  adhoc: narutoq3
+spec:
+ containers:
+  - name: sonu21
+    image: sonuverma1505/may2020q1:v1
+    ports: 
+    - containerPort: 80
+    env:
+     - name: x
+       value: app2
+

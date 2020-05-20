@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+ name: adhocrcnaruto4
+ labels:
+  app: web1
+spec:
+ replicas: 2
+ template:
+  metadata:
+   name: mypodwithrc
+   labels:
+    adhoc: narutorcq4
+  spec:
+   containers:
+    - name: adhocnaruto4
+      image: sonuverma1505/may2020q1:v1
+      ports:
+       - containerPort: 80
+
+
